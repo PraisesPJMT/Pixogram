@@ -10,8 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dot-env": "^0.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
+    "sass": "^1.67.0",
+    "zustand": "^4.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
