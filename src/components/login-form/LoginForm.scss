@@ -1,0 +1,47 @@
+@import "../../index.scss";
+
+form.login {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  max-width: 300px;
+
+  h1 {
+    text-align: center;
+    border-bottom: 2px dotted $blue;
+    padding: 10px;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  & > p.error {
+    color: $red;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 4px 10px;
+    background: lighten($color: $red-light, $amount: 20);
+  }
+
+  button {
+    background: $blue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    color: $light;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background: lighten($color: $blue, $amount: 10);
+    }
+  }
+}
