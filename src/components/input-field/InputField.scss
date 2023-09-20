@@ -1,0 +1,121 @@
+@import "../../index.scss";
+
+div.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0;
+
+  label {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    border-radius: 7px;
+    border: 2px solid $blue;
+    transition: all 0.3s ease-in-out;
+    background: lighten($color: #4d88ff, $amount: 25);
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      font-size: 1rem;
+      padding: 10px;
+      transition: all 0.3s ease-in-out;
+      border-radius: 7px;
+      background: lighten($color: #4d88ff, $amount: 25);
+
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      pointer-events: none;
+
+      svg {
+        width: 10px;
+        height: 10px;
+      }
+
+      svg.check {
+        color: green;
+      }
+
+      svg.ex {
+        color: $red;
+      }
+    }
+
+    input {
+      font-size: 1rem;
+      padding: 10px;
+      color: $dark;
+      border: none;
+      border-radius: 7px;
+      background: transparent;
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+  }
+
+  label.indicate {
+    span {
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      width: auto;
+
+      font-size: 0.8rem;
+      padding: 1px 8px;
+      background: $light;
+      border-radius: 0;
+    }
+
+    span.blue {
+      border-left: 2px solid $blue;
+      border-right: 2px solid $blue;
+    }
+
+    span.red {
+      border-left: 2px solid $red;
+      border-right: 2px solid $red;
+    }
+  }
+
+  label.active {
+    border: 2px solid $blue;
+    background: transparent;
+
+    span {
+      background: $light;
+      border-left: 2px solid $blue;
+      border-right: 2px solid $blue;
+    }
+  }
+
+  label.error {
+    border: 2px solid $red;
+    border-radius: 7px 7px 0 0;
+
+    span {
+      background: $light;
+      background: $light;
+      border-left: 2px solid $red;
+      border-right: 2px solid $red;
+    }
+  }
+
+  p.error {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    font-weight: 500;
+    color: $red;
+    background: lighten($color: $red-light, $amount: 20);
+    margin-top: 0;
+  }
+}
