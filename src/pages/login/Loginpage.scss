@@ -1,0 +1,134 @@
+@import "../../index.scss";
+
+main.login {
+  display: flex;
+  background: $blue;
+  color: $light;
+  width: 100%;
+  height: 100%;
+
+  section.graphics {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+
+    p.logo {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      font-family: $Lobster-font;
+      font-size: 3rem;
+      margin: 4rem auto;
+
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        padding: 4px;
+        background: #e6f2f288;
+      }
+    }
+
+    .headline {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin: 2rem auto;
+    }
+
+    div.graph {
+      position: relative;
+      width: 100%;
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+
+      img {
+        width: 15%;
+        position: absolute;
+        top: 0;
+      }
+
+      img.gallery {
+        width: 30%;
+        position: static;
+      }
+
+      .camera {
+        left: 0;
+      }
+
+      .camera2 {
+        right: 0;
+        top: 100%;
+      }
+
+      .photo {
+        top: 10%;
+        right: 10%;
+      }
+
+      .move {
+        left: 10%;
+        top: 80%;
+      }
+    }
+  }
+
+  section.form {
+    width: 60%;
+    background: $light;
+    border-radius: 15% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $dark;
+    padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main.login {
+    display: relative;
+
+    section.graphics {
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      p.logo {
+        gap: 0.7rem;
+        font-size: 2rem;
+        margin: 2rem auto;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .headline {
+        opacity: 0;
+      }
+
+      div {
+        opacity: 0.5;
+      }
+    }
+
+    section.form {
+      margin: auto;
+      width: 80%;
+      min-height: 400px;
+      height: fit-content;
+      border-radius: 50px;
+      z-index: 2;
+    }
+  }
+}
