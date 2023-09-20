@@ -1,0 +1,67 @@
+@import "../../index.scss";
+
+div#notice-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  background: transparent;
+  pointer-events: auto;
+
+  & > div {
+    width: 180px;
+    min-height: 35px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    pointer-events: auto;
+    position: relative;
+    color: $dark;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    button {
+      position: absolute;
+      top: 0.2rem;
+      right: 0.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: all 0.5s ease-in-out;
+      background: transparent;
+      border: 1px solid $red;
+      background: lighten($color: $red-light, $amount: 30);
+      cursor: pointer;
+
+      svg {
+        font-weight: 800;
+        font-size: 1.1rem;
+      }
+
+      &:hover {
+        rotate: 90deg;
+      }
+    }
+
+    &.success {
+      background: lighten($color: $green-light, $amount: 15);
+      border-left: 5px solid $green;
+    }
+
+    &.error {
+      background: lighten($color: $red-light, $amount: 25);
+      border-left: 5px solid $red;
+    }
+
+    &.warning {
+      background: lighten($color: $orange-light, $amount: 25);
+      border-left: 5px solid $orange;
+    }
+  }
+}
