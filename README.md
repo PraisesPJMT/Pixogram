@@ -58,13 +58,9 @@
 
 ## 💻 Preview <a name="preview"></a>
 
-> Coming soon...
-
 ![Preview](./assets/../src/assets/preview.jpeg)
 
 ## 🚀 Live Link <a name="live-endpoint"></a>
-
-> Coming soon...
 
 [Pixagram](pixagram-app.netlify.app)
 
