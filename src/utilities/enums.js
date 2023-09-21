@@ -49,7 +49,7 @@ export const APP_THEME = {
  * @type {number}
  * @constant
  */
-export const SEARCH_DEBOUNCE = 300;
+export const SEARCH_DEBOUNCE = 1;
 
 /**
  * The time (in seconds) duration for notification display.
@@ -57,3 +57,10 @@ export const SEARCH_DEBOUNCE = 300;
  * @constant
  */
 export const NOTICE_INTERVAL = 5;
+
+/**
+ * The number of photos to be displayed per page.
+ * @type {number}
+ * @constant
+ */
+export const LIST_PER_PAGE = 25;

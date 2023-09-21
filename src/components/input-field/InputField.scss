@@ -12,7 +12,7 @@ div.field {
 
     position: relative;
     border-radius: 7px;
-    border: 2px solid $blue;
+    border: 2px solid lighten($color: $dark, $amount: 10);
     transition: all 0.3s ease-in-out;
     background: lighten($color: #4d88ff, $amount: 25);
 
@@ -76,8 +76,8 @@ div.field {
     }
 
     span.blue {
-      border-left: 2px solid $blue;
-      border-right: 2px solid $blue;
+      border-left: 2px solid lighten($color: $dark, $amount: 10);
+      border-right: 2px solid lighten($color: $dark, $amount: 10);
     }
 
     span.red {
@@ -87,13 +87,13 @@ div.field {
   }
 
   label.active {
-    border: 2px solid $blue;
+    border: 2px solid lighten($color: $dark, $amount: 10);
     background: transparent;
 
     span {
       background: $light;
-      border-left: 2px solid $blue;
-      border-right: 2px solid $blue;
+      border-left: 2px solid lighten($color: $dark, $amount: 10);
+      border-right: 2px solid lighten($color: $dark, $amount: 10);
     }
   }
 
