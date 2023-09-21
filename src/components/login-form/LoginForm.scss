@@ -9,7 +9,7 @@ form.login {
 
   h1 {
     text-align: center;
-    border-bottom: 2px dotted $blue;
+    border-bottom: 2px dotted lighten($color: $dark, $amount: 10);
     padding: 10px;
   }
 
@@ -20,7 +20,7 @@ form.login {
     margin-top: 1rem;
   }
 
-  & > p.error {
+  & > p.error-msg {
     color: $red;
     text-align: center;
     font-size: 0.8rem;
@@ -30,7 +30,7 @@ form.login {
   }
 
   button {
-    background: $blue;
+    background: lighten($color: $dark, $amount: 10);
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -41,7 +41,10 @@ form.login {
     cursor: pointer;
 
     &:hover {
-      background: lighten($color: $blue, $amount: 10);
+      background: lighten(
+        $color: lighten($color: $dark, $amount: 10),
+        $amount: 10
+      );
     }
   }
 }
