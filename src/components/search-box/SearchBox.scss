@@ -1,0 +1,69 @@
+@import "../../index.scss";
+
+label.search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 4px 0;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+
+  svg {
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      background: none;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &.light {
+    border: 2px solid #b1cdcd;
+
+    svg {
+      color: #8a9191;
+    }
+
+    input {
+      color: $dark;
+    }
+
+    &.active {
+      background: #d9e5e5;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &.dark {
+    border: 2px solid lighten($color: $dark, $amount: 40);
+
+    svg {
+      color: lighten($color: $dark, $amount: 40);
+    }
+
+    input {
+      color: $light;
+    }
+
+    &.active {
+      background: lighten($color: $dark, $amount: 10);
+      border: 2px solid lighten($color: $dark, $amount: 60);
+      box-shadow: 0 0 5px rgba(225, 225, 225, 0.2);
+
+      svg {
+        color: lighten($color: $dark, $amount: 70);
+      }
+    }
+  }
+}
