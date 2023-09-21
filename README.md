@@ -52,6 +52,7 @@
 - Login
 - Rearrange gallery
 - Search pictures
+- Change application theme
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -59,15 +60,15 @@
 
 > Coming soon...
 
-<!-- ![Preview](./assets/../src/assets/preview.jpeg)-->
+![Preview](./assets/../src/assets/preview.jpeg)
 
 ## 🚀 Live Link <a name="live-endpoint"></a>
 
 > Coming soon...
 
-<!-- [Movie Box](https://imdb-movie-box.netlify.app/) -->
+[Pixagram](pixagram-app.netlify.app)
 
-<!-- ![Netlify](https://img.shields.io/badge/github-%23000000.svg?style=for-the-badge&logo=github&logoColor=#00C7B7) -->
+![Netlify](https://img.shields.io/badge/github-%23000000.svg?style=for-the-badge&logo=github&logoColor=#00C7B7)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,6 +111,13 @@ To run the project, execute the following command:
 - After running `npm run dev`, use the app on [http://localhost:5173/](http://localhost:5173/) in the browser!
 - For more information please visit [Vite](https://vitejs.dev/guide/).
 
+> Use the following user credentials to login to the application
+
+```
+Email: user@example.com
+Password: 1Password
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
@@ -127,7 +135,7 @@ To run the project, execute the following command:
 
 > The following are features to be expected in the future
 
-- [ ] **Stream a movie**
+- [ ] **Add photos**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,8 +164,6 @@ Give a ⭐️ if you like this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > - Special thanks to Zuri HNGx for this project
-
-<!-- > - FIGMA design is gotten here [FIGMA UI](<https://www.figma.com/file/tVfgoNfhYkQaUkh8LGqRab/MovieBox-(Community)?type=design&node-id=1220-324&mode=design&t=6998DWtjQrxz8mOf-0>) -->
 
 > - Tip hart to you for checking this project out
 
